@@ -1,0 +1,47 @@
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: lightblue;
+  padding: 15px;
+}
+
+#headNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 50px;
+  height: 20px;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.navi {
+  margin-left: 20px;
+}
+
+#headIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+// Slider
+
+.slideContainer {
+  width: 100vw;
+  height: 500px;
+  background-color: aqua;
+  margin-bottom: 20px;
+}
+

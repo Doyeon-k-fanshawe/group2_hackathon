@@ -1,0 +1,106 @@
+// Section1
+#section1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px;
+  height: 300px;
+  padding: 50px;
+  background-color: skyblue;
+  border-radius: 10px;
+}
+
+.sec1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.secImg {
+  display: inline-block;
+  background-color: white;
+  width: 400px;
+  height: 200px;
+}
+
+// Section2
+#section2 {
+  margin: 40px;
+}
+
+#section2 h2 {
+  text-align:  center;
+}
+
+#secBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sec2 {
+  text-align: center;
+}
+
+.sec2 img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: aquamarine;
+  margin: 20px 0;
+}
+
+// section3
+#section3 {
+  margin: 40px;
+}
+
+.sec3 {
+  height: 300px;
+  padding: 50px;
+  background-color: skyblue;
+  border-radius: 10px;
+}
+
+.floatRight {
+  float: right;
+}
+
+//section4
+#section4 {
+  margin: 40px;
+}
+
+.sec4 {
+  height: 300px;
+  padding: 50px;
+  background-color: skyblue;
+  border-radius: 10px;
+  text-align: center;
+}
+
+// section5
+#section5 {
+  background-color: rgb(202, 255, 255);
+  padding: 20px 40px; 
+}
+
+.sec5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.smSec5 {
+  width: 300px;
+  height: 300px;
+  border: solid 1px blue;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.smSec5 img {
+  width: 298px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+}
