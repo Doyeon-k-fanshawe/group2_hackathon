@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 40px 80px;
-  height: 580px;
+  padding: 40px 80px;
+  height: 600px;
 }
 
 .sec1 video{
@@ -13,14 +13,14 @@
   margin: auto;
   border-radius: 20px;
   opacity: 40%;
+  max-height: 600px;
 }
 
-.secButton {
+#section1 .secButton {
   display: inline-block;
-  position: absolute;
-  top: 1325px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  bottom: 20%;
+  left: 45%;
 }
 
 .secButton .button {
@@ -77,8 +77,11 @@
 .sec3 {
   height: 470px;
   padding: 50px;
-  background-color: skyblue;
+  background-color: black;
   border-radius: 20px;
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .floatRight {
