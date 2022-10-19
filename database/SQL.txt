@@ -1,0 +1,4 @@
+SELECT interface_title, interface_image_desk, interface_image_mob, interface_desc FROM tbl_interface 
+
+SELECT models_name, models_price, rebate_province_state, rebate_value FROM tbl_models, tbl_rebates
+WHERE country_id = 1
