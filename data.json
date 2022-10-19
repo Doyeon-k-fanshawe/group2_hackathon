@@ -1,20 +1,20 @@
 {
-    "My": {
-        "title":"1/6",
-        "pict":"sunmi.jpg",
-        "singer":"Sunmi",
-        "description":"She started the song with the thought, 'Can the weight of the heart be one-sixth on the moon where gravity is one-sixth?' It's a song with a cheerful city pop sound. The lyrics and vocals calmly unravel the emotions of Sunmi. It draws a lot of sympathy with the lyrics that represent modern people who constantly suffer from the weight and gravity of life."
+    "Multiple": {
+        "id":1,
+        "title":"Multiple",
+        "description":"HouseCom ThermoSecurity System is a fully digital, hardwired and wireless (WiFi, Bluetooth)enabled home personal and secure environment control system. All communications with the central system are accessible and controlled through the wall unit, product app. and the secured portal on the parent website. The system app. is available on both iOS and Android devices.",
+        "image":"wall_mockup.jpg"
     },
-    "Favorite": {
-        "title":"eight",
-        "pict":"IU.jpg",
-        "singer":"IU",
-        "description":"It's a heartbreaking song, but it's about wanting to remember the memories of people who left without saying hello until the end. She introduced the song, 'Eight,' as a short novel in which she confessed her 28 years of age using various metaphors with a fictional character called 'You.'"
+    "Convenient": {
+        "id":2,
+        "title":"Convenient",
+        "description":"You can adjust the temperature of your home from your Android or iPhone watch. Also you can access the home security system on your phone to check in on the house occupancy through the remote, portable cameras. ",
+        "image":"watches_mockup.jpg"
     },
-    "Songs": {
-        "title":"Youth",
-        "pict":"khaki.jpg",
-        "singer":"Khaki Hwang",
-        "description":"Producer Hwang Khaki's third single is catchy city-pop music."
+    "SaveTime": {
+        "id":3,
+        "title":"Save Your Time",
+        "description":"You may wish to look for independent room temperatures, smoke and carbon monoxide status or just open windows and unlocked doors for your return home. All of this functionality and more are part of the capabilities of the HouseCom™ ThermoSecurity™ security and environment system.",
+        "image":"tablet_mockup.jpg"
     }
   }
