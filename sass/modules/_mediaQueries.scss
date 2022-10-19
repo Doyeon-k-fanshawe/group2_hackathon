@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
   // header
   .tablet {
     display: none;
@@ -26,6 +26,10 @@
 
   // body
   //section1
+
+  #section1 {
+    height: 500px;
+  }
 
   #section1 .secButton {
     display: inline-block;
@@ -96,22 +100,346 @@
     max-width: 100%;
   }
   
+  //section 4
+  .sec5 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .smSec5:first-child {
+    margin-bottom: 50px;
+  }
 
 
+  //footer
+  .menuBox {
+    display: flex;
+    flex-direction: column;
+  }
 
-
-
-
-
-
-
+  .navi2 {
+    margin-bottom: 10px;
+  }
 
 }
 
+@media only screen and (min-width: 600px) and (max-width: 800px) {
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .tablet {
+    display: none;
+  }
+
+  .mobile2 {
+    display: none;
+  }
+
+  .headButton {
+    margin-left: 20px;
+  }
+
+  .hbg {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 7px;
+  }
+
+  .hbg img {
+    width: 30px;
+    height: 30px;
+  }
+
+  // section1
+  #section1 {
+    padding: 30px 40px;
+    height: 400px;
+  }
+
+  #section1 .secButton {
+    display: inline-block;
+    position: relative;
+    bottom: 30%;
+    left: 40%;
+  }
+
+  //section2
+  #section2 {
+    margin-top: 100px;
+  }
+
+  #section2 h2 {
+    border: none;
+    margin-bottom: 10px;
+  }
+  
+  #secBox {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sec2 img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+  }
+
+  .arrowIcon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 180px;
+  }
+
+  .arrowIcon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .arrowIcon {
+    margin-right: 20px;
+  }
+
+  .arrowIcon2 {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 180px;
+  }
+
+  .arrowIcon2 img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .arrowIcon2 {
+    margin-left: 20px;
+  }
+
+  // Section3 
+  #section3 {
+    margin: 100px 80px;
+  }
+
+  .threeButton {
+    max-width: 100%;
+  }
+  
+  //section 4
+  .sec5 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .smSec5:first-child {
+    margin-bottom: 50px;
+  }
+
+
+  //footer
+  .menuBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navi2 {
+    margin-bottom: 10px;
+  }
+  
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   // header
   .tablet {
     display: none;
   }
+
+  .mobile {
+    display: none;
+  }
+
+  .headButton {
+    margin-left: 20px;
+  }
+
+  .hbg {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 7px;
+  }
+
+  .hbg img {
+    width: 30px;
+    height: 30px;
+  }
+
+  // section1
+  #section1 {
+    padding: 30px 40px;
+    height: 300px;
+  }
+
+  #section1 .secButton {
+    display: inline-block;
+    position: relative;
+    bottom: 30%;
+    left: 25%;
+  }
+
+  .secButton .button {
+    padding: 10px 80px;
+  }
+
+ //section2
+  #section2 {
+  margin-top: 80px;
+}
+
+#section2 h2 {
+  border: none;
+  margin-bottom: 10px;
+}
+
+#secBox {
+  display: flex;
+  justify-content: center;
+}
+
+.sec2 img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.arrowIcon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-top: 250px;
+}
+
+.arrowIcon img {
+  width: 30px;
+  height: 30px;
+}
+
+.arrowIcon {
+  margin-right: 40px;
+}
+
+.arrowIcon2 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-top: 250px;
+}
+
+.arrowIcon2 img {
+  width: 30px;
+  height: 30px;
+}
+
+.arrowIcon2 {
+  margin-left: 40px;
+}
+
+// Section3 
+
+.floatRight {
+  text-align: center;
+}
+
+.floatRight h2 {
+  margin-top: 70px;
+  font-size: 20px;
+}
+
+.floatRight p {
+  font-size: 15px;
+}
+
+.threeButton {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 320px;
+}
+
+.secButtonIcon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.secButtonIcon img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+
+//section 4
+.sec5 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.smSec5:first-child {
+  margin-bottom: 50px;
+}
+
+.secButton3 {
+  padding: 8px 15px;
+}
+
+
+//footer
+#footer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+#columLogo {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footerLogo {
+  height: 10px;
+  margin-left: 30%;
+  margin-bottom: 30px;
+}
+
+.menuBox {
+  display: flex;
+  flex-direction: column;
+  // padding-left: 40%;
+  text-align: center;
+  padding-left: 30px;
+}
+
+.navi2 {
+  margin-bottom: 10px;
+}
+
+.follow {
+  text-align: center;
+}
+
+.socialBox {
+  margin-left: 35%;
+}
+
+.news {
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.newsInput {
+  margin-left: 15%;
+}
+  
 }
