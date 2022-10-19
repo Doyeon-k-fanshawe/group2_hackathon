@@ -9,6 +9,10 @@
     flex-direction: row;
   }
 
+  #heroImg {
+    max-height: 600px !important;
+  }
+
   .headButton {
     margin-left: 20px;
   }
@@ -28,19 +32,16 @@
   //section1
 
   #section1 {
-    height: 500px;
+    max-height: 500px;
   }
 
   #section1 .secButton {
-    display: inline-block;
-    position: relative;
-    bottom: 20%;
-    left: 40%;
+    left: 42%;
   }
 
   //section2
   #section2 {
-    margin-top: 100px;
+    margin-top: 0px;
   }
 
   #section2 h2 {
@@ -125,6 +126,10 @@
 
 @media only screen and (min-width: 600px) and (max-width: 800px) {
 
+  #heroImg {
+    max-height: 600px !important;
+  }
+
   .tablet {
     display: none;
   }
@@ -150,15 +155,13 @@
 
   // section1
   #section1 {
-    padding: 30px 40px;
+    padding: 80px 40px;
     height: 400px;
   }
 
   #section1 .secButton {
-    display: inline-block;
-    position: relative;
-    bottom: 30%;
-    left: 40%;
+    left: 38%;
+    bottom: 0%;
   }
 
   //section2
@@ -259,6 +262,10 @@
     display: none;
   }
 
+  #heroImg {
+    height: 350px !important;
+  }
+
   .headButton {
     margin-left: 20px;
   }
@@ -283,8 +290,8 @@
   #section1 .secButton {
     display: inline-block;
     position: relative;
-    bottom: 30%;
-    left: 25%;
+    bottom: 28%;
+    left: 26%;
   }
 
   .secButton .button {
@@ -293,7 +300,7 @@
 
  //section2
   #section2 {
-  margin-top: 80px;
+  margin-top: 0px;
 }
 
 #section2 h2 {
@@ -316,7 +323,7 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin-top: 250px;
+  margin-top: 200px;
 }
 
 .arrowIcon img {
@@ -332,7 +339,7 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin-top: 250px;
+  margin-top: 200px;
 }
 
 .arrowIcon2 img {
@@ -345,13 +352,16 @@
 }
 
 // Section3 
+#section3 {
+  margin: 100px 80px;
+}
 
 .floatRight {
   text-align: center;
 }
 
 .floatRight h2 {
-  margin-top: 70px;
+  margin-top: 50px;
   font-size: 20px;
 }
 
