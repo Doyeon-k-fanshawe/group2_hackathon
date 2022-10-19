@@ -2,7 +2,6 @@
 
     // Slider
     
-    
     let slideIndex = 0;
     showSlides();
     
@@ -29,35 +28,34 @@
             description = document.querySelector(".description"),
             buttonsDesk = document.querySelectorAll(".desktop"),
             buttonsMob = document.querySelectorAll(".mobile");
-       console.log("fired");
+    console.log("fired");
     
-       let remoteData = {};
+    let remoteData = {};
     
     
-       function getData()  {                                 
-             
-           fetch(`./data.json`) 
-           .then(res => res.json()) 
-           .then(data => {
-               remoteData = data;
-               console.table(remoteData);
-           })
-           .catch(error => console.log(error));
-       }
+    function getData()  {                                 
     
-          getData();
-       function buildInterface() {
-           
+      fetch(`./data.json`) 
+      .then(res => res.json()) 
+      .then(data => {
+          remoteData = data;
+          console.table(remoteData);
+      })
+      .catch(error => console.log(error));
+      }
+    
+    getData();
+      function buildInterface() {
             
             let key = this.dataset.key;
             console.log(this.dataset.key);
             
             title.textContent = remoteData[key].title;
             description.textContent = remoteData[key].description;
-       }   
+      }   
       
     
-       buttonsDesk.forEach(buttonD => buttonD.addEventListener("click", buildInterface));
-       buttonsMob.forEach(buttonM => buttonM.addEventListener("click", buildInterface));
+    buttonsDesk.forEach(buttonD => buttonD.addEventListener("click", buildInterface));
+    buttonsMob.forEach(buttonM => buttonM.addEventListener("click", buildInterface));
     
     })();
