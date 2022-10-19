@@ -1,4 +1,35 @@
-@media screen and (max-width: 480px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   // header
-  
+  .tablet {
+    display: none;
+  }
+
+  #header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .headButton {
+    margin-left: 20px;
+  }
+
+  .hbg {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 30px;
+  }
+
+  .hbg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  // header
+  .tablet {
+    display: none;
+  }
 }
