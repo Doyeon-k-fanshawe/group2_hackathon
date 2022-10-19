@@ -1,183 +1,30 @@
 
-import { getData } from "./modules/dataMiner.js";
-//imports always go at the top the file
-//this is called a IIFE
-//it's a pretty common Javascript programming pattern
-//also called 
 
 (() => {
 
-  // Landing Page
-  let targetText = document.querySelector('#dynamic'),
-      noLanding = document.querySelector('.wrap');
+// Slider
 
-  function noLandingPage() {
-    noLanding.classList.add('landing');
-  }
 
-  noLanding.addEventListener('click', noLandingPage);
+let slideIndex = 0;
+showSlides();
 
-  // rest Text
-  function randomString() {
-    let stringArr = ['My Favourite Things', 'My Favourite Songs', '1/6', 'eight', 'Youth'],
-        selectString = stringArr[Math.floor(Math.random() * stringArr.length)],
-        selectStringArr = selectString.split('');
-
-    return selectStringArr;
-  }
-
-  // typing reset
-  function resetTyping() {
-    targetText.textContent = "";
-    dynamic(randomString());
-  }
-
-  // Text
-  function dynamic(randomArr) {
-    if(randomArr.length > 0) {
-      targetText.textContent += randomArr.shift();
-      setTimeout(function() {
-        dynamic(randomArr);
-      }, 80);
-    } else {
-      setTimeout(resetTyping, 3000);
+function showSlides() {
+    let slides = document.getElementsByClassName("slides"),
+        dots = document.getElementsByClassName("dot");
+        
+    let i;
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
     }
-  }
-
-  dynamic(randomString());
-
-  // Blink Function
-  function blink() {
-    targetText.classList.toggle('active');
-  }
-
-  setInterval(blink, 500);
-
-
-
-
-  // audio
-  const audioContainer = document.querySelector('.audioBox'),
-        playBtn = document.querySelector('.playBtn'),
-        stopBtn = document.querySelector('.stopBtn'),
-        audioNextBtn = document.querySelector('.nextBtn');
-  
-  const MUSIC_COUNT = 3;
-
-  let currentAudio = 1;
-
-  function playAudio() {
-    audioContainer.volume = 0.2;
-    audioContainer.loop = true;
-    audioContainer.play();  
-  }
-  
-  function stopAudio() {
-    audioContainer.pause();  
-  }
-  
-  
-  function loadAudio() {
-    const source = document.querySelector('#audioSource');
-    source.src = `./audio/${currentAudio}.mp3`;
-    audioContainer.load();
-    playAudio();
-  }
-  
-  function handleNextButton() { 
-  
-    if (currentAudio < MUSIC_COUNT) {
-      currentAudio += 1;
-    } else {
-      currentAudio = 1;
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
     }
-    
-    audioContainer.pause();
-    loadAudio();
-  }
-  
-  playBtn.addEventListener('click', loadAudio);
-  stopBtn.addEventListener('click', stopAudio);
-  audioNextBtn.addEventListener('click', handleNextButton);
-
-
-  // Slide
-  const slideWrapper = document.querySelector('.container'),
-        slides = document.querySelectorAll('.item'),
-        slider = document.querySelector('.slider'),
-        totalSlides = slides.length;
-
-  var sliderWidth = slideWrapper.clientWidth,
-      slideIndex = 0;
-
-  slider.style.width = sliderWidth * totalSlides + 'px';
-
-  showSlides()
-
-  function showSlides() {
-      for(var i = 0; i < slides.length; i++){
-          slider.style.left = -(sliderWidth * slideIndex) + 'px';
-      }
-      slideIndex++;
-      if (slideIndex === totalSlides) {
-          slideIndex = 0;
-      }
-      setTimeout(showSlides, 3000);
-  }
-
-  // Bio-panel
-
-  let theSongs = document.querySelector('#love-section'),
-      theTemplate = document.querySelector('#bio-template').content,
-      faveData;
-
-  function buildThings(data) {
-
-    faveData = data;
-
-    const things = Object.keys(data); // Object.keys creats an array
-
-    things.forEach (thing => {
-
-      let panel = theTemplate.cloneNode(true);
-      let containers = panel.firstElementChild.children;
-
-      containers[0].querySelector('img').src= `images/${data[thing].pict}`;
-      // save a reference to the top-level keys of the data object here, so we can retrieve it on a click
-      containers[0].querySelector('img').id = thing;
-      containers[0].querySelector('img').addEventListener("click", showThing);
-
-      containers[1].textContent = data[thing].title;
-      containers[2].textContent = data[thing].singer;
-      containers[3].textContent = data[thing].description;
-
-      theSongs.appendChild(panel);
-    })
-
-  }
-
-  function showThing() {
-
-    let currentThing = faveData[this.id]; // this retrieves the object that matches the key we saved
-
-    // lightBoxImg.src = `images/${currentThing.pict}`
-  }
-
-  getData(`./data.json`, buildThings);
-
-  // popBox
-  window.onload = function() {
-    function onClick() {
-      document.querySelector('.popWrap').style.display = 'block';
-    }
-
-    function offClick() {
-      document.querySelector('.popWrap').style.display = 'none';
-    }
-
-    document.querySelector('.openBtn').addEventListener('click', onClick);
-    document.querySelector('.btn_close').addEventListener('click', offClick);
-  }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3500); 
+}
 
 
 })();
