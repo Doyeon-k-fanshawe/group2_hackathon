@@ -1,21 +1,27 @@
 #heroImg {
-  height: 650px;
+  max-height: 800px;
 }
 
 .slideContainer {
   // max-width: 1000px;
-  height: 600px;
+  max-height: 700px;
   position: relative;
   margin-bottom: 20px;
+  text-align: center;
+  background-color: black;
 }
 
 .slides {
   display: none;
+  max-width: 1400px;
 }
 
 .slides img {
+  text-align: center;
   vertical-align: middle;
-  height: 600px;
+  // height: 600px;
+  width: 100vw;
+  max-height: 780px;
 }
 
 .dotContainer {
